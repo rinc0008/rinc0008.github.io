@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Carol Rincon</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
+</head>
+<body>
+    <!-- Use grid-wrapper to create grid ares in 1920px screen-->
+    <div class="grid-wrapper">
+
+        <header>
+            <div class="logo">
+                <img src="images/logo/logo.png" alt="Dash Logo" width="115">
+            </div> <!-- end logo-->
+        </header>
+
+        <main>
+            <div class="content">
+                <div><h1>Want to be your own boss?</h1></div>
+                <div><p>Start today and make up to $30/hr driving your own vehicle with Dash!</p></div>
+            </div> <!-- end content-->
+        </main>
+
+        <!-- Put img outside main to target individually and be able to assign a grid area -->
+        <div class="picture">
+            <img src="images/bg-image/scooter.svg" alt="Girl in scooter">
+        </div> <!-- end picture-->
+
+        <section class="form-container">
+            <h2>Apply Now</h2>
+            <p> Enter your info below.</p>
+
+            <input type="text" id="fname" name="fname" value="First Name"><br>
+            <input type="text" id="lname" name="lname" value="Last Name"><br>
+            <input type="text" id="number" name="number" value="Phone Number"><br>
+            <input type="text" id="email" name="email" value="Email Address"><br>
+                            
+            <div class="text-checkbox"><input type="checkbox" id="terms" name="terms" value="Agree Terms">
+            <label for="terms">I agree to dash terms</label><br></div>
+                            
+            <input type="submit" value="DRIVE WITH US">
+                            
+            <div class="text-link"><p>Already Applied? <a href="url">Check your application status here.</a></p></div>
+        </section>
+        
+        <footer>
+            <div id="footer" class="footer-grid">
+                <div class="grid-item"><p>See how much you can earn with Dash.</p></div>
+                
+                <div class="grid-item"><p>how many hours do you want to drive with us this week?</p></div>
+                
+                <!-- includes footer form in divs to target each particularly and includes 'icons' in the same div to target as an only element -->
+                <div class="grid-item"><input type="text" id="hours" name="hours" value="Hours"></div>
+                
+                <div class="grid-item"><input type="text" id="city" name="city" value="City"></div>
+                
+                <div class="grid-item"><input type="submit" value="CALCULATE"></div>
+
+                <div class="grid-item"> 
+                    <img src="images/icons/facebook.svg" alt="Facebook Logo">
+                    <img src="images/icons/instagram.svg" alt="Instagram Logo">
+                    <img src="images/icons/twitter.svg" alt="Twitter Logo">
+                    <img src="images/icons/linkedin.svg" alt="Linkedin Logo">
+                </div>
+            </div> <!-- end footer-grid-->
+        </footer>
+
+    </div> <!-- end grid-wrapper-->
+</body>
+</html>

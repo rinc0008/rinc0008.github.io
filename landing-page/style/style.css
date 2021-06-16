@@ -1,0 +1,375 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ============= Carol's Styles ================ */
+
+/* ===== Mobile ===== */
+body{
+  background-color:#F7F7FF;
+}
+
+/*Use width at 80% to add a margin of around 36px at the right and left sides for mobile screens of 375px, centering the content*/
+.grid-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 15px;
+}
+
+.content, section {
+  color: #333131;
+  font-family:'Montserrat', sans-serif;
+  line-height: 1.3;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+section p {
+  font-size: 16px;
+  text-align: left;
+}
+
+.text-link p {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #FF8480;
+}
+
+/* == Set form-container for mobile == */
+.form-container {
+  margin: 15px 0 45px;
+  padding:25px;
+  background-color: #FFFFFF;
+  border-radius: 26px;
+  box-shadow: 5px 5px 15px #3331315f;
+}
+
+input{
+  background-color: #F4F4F5;
+  width: 92%;
+  border-radius: 11px;
+  border: none;
+  margin:7px 0;
+}
+
+input, textarea, .text-checkbox {
+  font-family:'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #9B9B9B;
+  padding:10px;
+}
+
+input[type=checkbox] {
+  color: #333131;
+  width: unset;
+  transform: scale(2);
+  margin-right: 20px;
+}
+
+div.text-checkbox {
+  color:#333131;
+}
+
+input[type=submit] {
+  width: 250px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #333131;
+  background-color: #57EEAB;
+}
+
+/* == Set footer for mobile == */
+
+/*Add again width 80% and margin 0 auto to center the content which were attached to the left side*/
+.footer-grid {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 68px);
+  gap: 10px;
+}
+
+/*Use negative margin to rollback into the footer 80% width 'margin' and fill the sides with the #FFFD8C background color*/
+footer {
+  background-color: #FFFD8C;
+  margin: 0 -36px 0;
+}
+
+.grid-item:nth-child(1),
+.grid-item:nth-child(2),
+.grid-item:nth-child(5),
+.grid-item:nth-child(6){
+  grid-column: 1/5;
+}
+
+.grid-item:nth-child(3){
+  grid-column: 1;
+  margin-right: 10px;
+}
+
+.grid-item:nth-child(4){
+  grid-column: 2/5;
+}
+
+.grid-item p {
+  font-family:'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.grid-item:nth-child(1) p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333131;
+  padding-top: 30px;
+}
+
+/*Use negative margin-top to reduce the top gap between the button and the inputs, to match the gutter with of the inputs*/
+.grid-item input[type=submit]{
+  width: 302px;
+  background-color: #FF8480;
+  margin-top: -7px;
+  color:#F7F7FF;
+}
+
+.grid-item:nth-child(6) img{
+  margin: 10px 19px 20px;
+}
+
+/* ===== Tablet ===== */
+@media (min-width:768px){
+  .grid-wrapper {
+    width: 79%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 80px;
+    padding: 15px 0 15px;
+  }
+
+  .form-container{
+    padding: 40px;
+  }
+
+  section p {
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .text-link p, a {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  input, textarea{
+    padding: 15px;
+  }
+
+  input[type=submit] {
+    width: 525px;
+    font-size: 32px;
+  }
+
+  div.text-checkbox {
+    font-size: 20px;
+  }
+  
+  /* == Set footer grid  for tablet == */
+
+  /*Put #FFFD8C background color outside the established width. Rolling back with a negative margin to fill the remaining of the screen for tablet at 768px.*/
+  footer {
+    margin: 0 -80px 0;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 62px);
+    gap: 16px;
+  }
+  
+  .grid-item:nth-child(1),
+  .grid-item:nth-child(2){
+    grid-column: 1/9;
+  }
+
+  .grid-item:nth-child(3){
+    grid-column: 1/3;
+    padding-right: 16px;
+  }
+
+  .grid-item:nth-child(4){
+    grid-column: 3/6;
+    margin-right: 16px;
+  }
+
+  .grid-item:nth-child(5){
+    grid-column: 6/9;
+  }
+
+  .grid-item input[type=submit]{
+    width: 216px;
+    margin-top: 7px;
+    padding:10px;
+    font-size: 24px;
+  }
+
+  .grid-item:nth-child(6){
+    grid-column: 3/7;
+  }
+}
+
+/* ===== Desktop ===== */
+/*Use grid areas to modify the layout at 1920px screens. Assign an area per section/element */
+@media (min-width: 1920px) {
+  .grid-wrapper {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    grid-template-areas: 
+    "header header header"
+    "content picture section"
+    "footer footer footer";
+  }
+
+  header {
+    grid-area: header;
+    margin-bottom: 35px;
+  }
+
+  /* Use negative value to overlap text in the picture column. */
+  main p{
+    margin-right: -50px;
+  }
+
+  .content {
+    grid-area: content;
+  }
+  
+  /* Overlaped picture in the form container with the width and align properties. Move it to the right to re center and overlap text elements with a negative margin-left. */
+  .picture {
+    grid-area: picture;
+    align-self: center;
+    width: 150%;
+    margin-left: -130px;
+  }
+  
+  section {
+    grid-area: section;
+  }
+
+  div.text-checkbox {
+    font-size: 18px;
+  }
+
+  section p {
+    padding: 5px 0 5px;
+  }
+
+ /* Negative margin in left and right sides to rollback footer background to fill the remaining screen at 1920px */
+  footer {
+    grid-area: footer;
+    margin: 25px -140px 0;
+  }
+
+  /*Creation of a second grid template into the grid-wrapper to target each footer element with child function in a 12 columns template as Mock-up suggest*/
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 122px);
+    gap: 16px;
+    width: 85%;
+    margin-bottom: 30px;
+  }
+
+  .grid-item:nth-child(1){
+    padding-top: 15px;
+  }
+
+  .grid-item:nth-child(3){
+    grid-column: 1/2;
+    padding-right: 16px;
+  }
+
+  .grid-item:nth-child(4){
+    grid-column: 2/4;
+    margin-right: 16px;
+  }
+
+  .grid-item:nth-child(5){
+    grid-column: 4/6;
+  }
+
+  /*Uses -25px margin-top to center icons in between rows as muck up suggest*/
+  .grid-item:nth-child(6){
+    grid-column: 10/13;
+    margin-top: -25px;
+    margin-left: 100px;
+  }
+
+}

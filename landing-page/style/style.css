@@ -135,7 +135,7 @@ div.text-checkbox {
 }
 
 input[type=submit] {
-  width: 250px;
+  width: 100%;
   font-weight: 700;
   font-size: 24px;
   color: #333131;
@@ -144,19 +144,17 @@ input[type=submit] {
 
 /* == Set footer for mobile == */
 
+footer {
+  background-color: #FFFD8C;
+}
+
 /*Add again width 80% and margin 0 auto to center the content which were attached to the left side*/
 .footer-grid {
   width: 80%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 68px);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-}
-
-/*Use negative margin to rollback into the footer 80% width 'margin' and fill the sides with the #FFFD8C background color*/
-footer {
-  background-color: #FFFD8C;
-  margin: 0 -36px 0;
 }
 
 .grid-item:nth-child(1),
@@ -191,7 +189,7 @@ footer {
 
 /*Use negative margin-top to reduce the top gap between the button and the inputs, to match the gutter with of the inputs*/
 .grid-item input[type=submit]{
-  width: 302px;
+  width: 100%;
   background-color: #FF8480;
   margin-top: -7px;
   color:#F7F7FF;
@@ -232,7 +230,7 @@ footer {
   }
 
   input[type=submit] {
-    width: 525px;
+    width: 100%;
     font-size: 32px;
   }
 
@@ -242,15 +240,13 @@ footer {
   
   /* == Set footer grid  for tablet == */
 
-  /*Put #FFFD8C background color outside the established width. Rolling back with a negative margin to fill the remaining of the screen for tablet at 768px.*/
   footer {
-    margin: 0 -80px 0;
+    margin: 0 auto;
   }
   
   .footer-grid {
     display: grid;
-    grid-template-columns: repeat(8, 62px);
-    gap: 16px;
+    grid-template-columns: repeat(8, 1fr);
   }
   
   .grid-item:nth-child(1),
@@ -273,7 +269,7 @@ footer {
   }
 
   .grid-item input[type=submit]{
-    width: 216px;
+    width: 100%;
     margin-top: 7px;
     padding:10px;
     font-size: 24px;
@@ -282,6 +278,7 @@ footer {
   .grid-item:nth-child(6){
     grid-column: 3/7;
   }
+
 }
 
 /* ===== Desktop ===== */
@@ -294,8 +291,7 @@ footer {
     gap: 16px;
     grid-template-areas: 
     "header header header"
-    "content picture section"
-    "footer footer footer";
+    "content picture section";
   }
 
   header {
@@ -332,19 +328,19 @@ footer {
     padding: 5px 0 5px;
   }
 
- /* Negative margin in left and right sides to rollback footer background to fill the remaining screen at 1920px */
+  /*Creation of a second grid template to target each footer element with child function in a 12 columns template as Mock-up suggestion, use margin to center content*/
+
   footer {
-    grid-area: footer;
-    margin: 25px -140px 0;
+    padding-bottom: 2%;
+    margin-top: 2%;
   }
 
-  /*Creation of a second grid template into the grid-wrapper to target each footer element with child function in a 12 columns template as Mock-up suggest*/
   .footer-grid {
     display: grid;
-    grid-template-columns: repeat(12, 122px);
+    grid-template-columns: repeat(12, 1fr);
     gap: 16px;
+    margin: 0 auto;
     width: 85%;
-    margin-bottom: 30px;
   }
 
   .grid-item:nth-child(1){
@@ -367,9 +363,13 @@ footer {
 
   /*Uses -25px margin-top to center icons in between rows as muck up suggest*/
   .grid-item:nth-child(6){
-    grid-column: 10/13;
+    grid-column: 11/13;
     margin-top: -25px;
-    margin-left: 100px;
+    padding-left: 16%;
+  }
+  
+  .grid-item:nth-child(6) img{
+    margin-left: 0;
   }
 
 }

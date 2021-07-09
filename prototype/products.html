@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style/products-style.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="shortcut icon" type="image/jpg" href="images/home-icon.png"/>
+        <link href="//db.onlinewebfonts.com/c/7980cc1889b6b0b264dc47cca659f7c2?family=Neue+Montreal" rel="stylesheet" type="text/css"/>
+        <link href="//db.onlinewebfonts.com/c/43cb06ffbdca47126d0b5a2eec7e90ae?family=MADE+Sunflower" rel="stylesheet" type="text/css"/>
+        <title>Prototype - Home - Carol Rincon</title>
+    </head>
+    
+    <body>
+        <!-- Use grid-wrapper to create grid areas in 1000px screen-->
+        <div class="grid-wrapper">
+            <header>
+                <div class="header-background">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Bubbly & Cream Logo">
+                    </div> <!-- end logo -->
+                    <div class="nav-container">
+                        <div class="home-icon">
+                            <a href="index.html"><img src="images/home-icon.png" alt="home icon"></a>
+                            <a class="home" href="index.html">Home</a>
+                        </div>
+                        <div class="nav-bar">
+                            <a href="products.html">Products</a>
+                            <a href="about.html">About Us</a>
+                        </div> <!-- nav-bar -->
+                    </div><!-- nav-container -->
+                </div><!-- header-background -->
+            </header>
+           
+            <main>
+                <div class="content">
+                    <div><h1>BUBBLY & CREAM</h1></div>
+                    <div><p>Maecenas in velit lacus. Curabitur mattis, tortor quis venenatis tempus, eros arcu viverra felis, eget varius sem nisi nec massa. Sed eget lacus porta, viverra lacus porta, pretium metus. Nulla vitae dapibus sem. Nam vitae nibh non ligula pellentesque venenatis et quis leo. Sed in lobortis ex. Curabitur viverra dolor non sapien cursus, id pharetra arcu iaculis. Praesent pulvinar fringilla odio sed aliquam. Maecenas porttitor massa vitae velit tempor condimentum.</p></div>
+                    <div><a href="about.html" class="button">Connect</a></div>
+                </div> <!-- end content-->
+            </main>
+
+            <div class="grid-content">
+
+                <div><h2>MOOD FLAVOURS</h2></div>
+
+                <div class="grid-item">
+                    <img 
+                        srcset="images/mood-flavours-cover-320.jpg 320w,
+                                images/mood-flavours-cover-720.jpg 720w"
+                        sizes="(min-width: 720px) 50vw, 100vw"
+                        src="images/mood-flavours-cover-720.jpg"
+                        alt="active ice cream flavour">
+                    <h3>Active</h3>
+                </div>
+
+                <div class="grid-item">
+                    <img 
+                        srcset="images/strawberry-ice-cream-320.jpg 320w,
+                                images/strawberry-ice-cream-720.jpg 720w"
+                        sizes="(min-width: 720px) 50vw, 100vw"
+                        src="images/strawberry-ice-cream-720.jpg"
+                        alt="love ice cream flavour">
+                    <h3>Love</h3>
+                </div>
+
+                <div class="grid-item">
+                    <img 
+                        srcset="images/ice-cream-cones-320.jpg 320w,
+                                images/ice-cream-cones-720.jpg 720w"
+                        sizes="(min-width: 720px) 50vw, 100vw"
+                        src="images/ice-cream-cones-720.jpg"
+                        alt="joy ice cream flavour">
+                    <!-- Add modifier to move individually the h3 an put it over the hidden content of the picture-->
+                    <div class="modifier"><h3>Joy</h3></div>
+                </div>
+
+                <div class="grid-item">
+                    <img 
+                        srcset="images/adventure-ice-cream-320.jpg 320w,
+                                images/adventure-ice-cream-720.jpg 720w"
+                        sizes="(min-width: 720px) 50vw, 100vw"
+                        src="images/adventure-ice-cream-720.jpg"
+                        alt="adventure ice cream flavour">
+                    <h3>Adventure</h3>
+                </div>
+
+                <div class="grid-item">
+                    <img 
+                        srcset="images/madness-ice-cream-320.jpg 320w,
+                                images/madness-ice-cream-720.jpg 720w"
+                        sizes="(min-width: 720px) 50vw, 100vw"
+                        src="images/madness-ice-cream-720.jpg"
+                        alt="madness ice cream flavour">
+                        <div class="modifier2"><h3>Madness</h3></div>
+                </div>
+
+                <div class="grid-item">
+                    <img 
+                        srcset="images/quietness-ice-cream-320.jpg 320w,
+                                images/quietness-ice-cream-720.jpg 720w"
+                        sizes="(min-width: 720px) 50vw, 100vw"
+                        src="images/quietness-ice-cream-720.jpg"
+                        alt="quietness ice cream flavour">
+                        <div class="modifier3"><h3>Quietness</h3></div>
+                </div>
+                
+                <div class="grid-item">
+                    <!-- add "hide" class to target specifically the img and put it in hidden when display desktop screen (up to 1000px) and in the general container of grid-item upload the same img as a background cover-->
+                    <img class="hide"
+                        srcset="images/kid-and-ice-cream-320.jpg 320w,
+                                images/kid-and-ice-cream-480.jpg 480w, 
+                                images/kid-and-ice-cream-720.jpg 720w,
+                                images/kid-and-ice-cream-960.jpg 960w"
+                        sizes="(min-width: 960px) 50vw, 100vw"
+                        src="images/kid-and-ice-cream-960.jpg"
+                        alt="girl licking ice cream">
+                </div>
+            </div> <!-- end content2-->
+        </div><!-- end grid-wrapper-->
+
+        <!-- Put footer outside grid-wrapper to not modify initial width at a porcentage, so the footer backroung is responsive-->
+        <footer>
+            <div id="footer" class="footer-flex">
+                <div class="flex-item">
+                    <p><strong>Contact</strong><br>+ 1 343-098-7445<br>info@bubblyandcream.ca<br><br><strong>Hours</strong><br>Mon - Fri: 10am - 5pm<br>Weekends: 9am - 7pm<br><br>©Bubbly&cream2021</p>
+                </div>
+            <!-- to move social media icons together, put all in a div as a container-->
+                <div class="flex-item">
+                    <img src="images/facebook.png" alt="facebook icon" width="44">
+                    <img src="images/instagram.png" alt="Instagram icon" width="44">
+                    <img src="images/twitter.png" alt="twitter icon" width="44">
+                </div>
+
+                <div class="flex-item">
+                    <img src="images/white-logo.png" alt="white logo" width="161">
+                </div>
+            </div> <!-- end footer flex -->
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,204 @@
+/*add overlay and linear-gradient as a visual effect to low opacity in the background img*/
+.back-img {
+    margin: 15px 0 0;
+    background-image: url("..//images/adventure-ice-cream.jpeg"), linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.6));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*add linear gradient from white to transparent in the main text div/wrapper .gradient, to make the text more legible over the background img and generate transition effect to do not lose the img that is already with 'less opacity'*/
+.gradient {
+    background: linear-gradient(to right, rgb(255, 255, 255),rgba(255, 255, 255, 0));
+    padding:5% 0 10% 0;
+}
+
+video {
+    border-radius: 7px;
+    width: 100%;
+}
+
+h1, h2 {
+    margin: 20px 0 10px ;
+    text-align: center;
+}
+
+h1, p {
+    text-align: center;
+    padding: 0 10%;
+    line-height: 1.3;
+}
+
+.grid-content .grid-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 7% 0 0 0;
+}
+
+.grid-item:nth-child(2){
+    padding: 7% 0 10% 0;
+}
+.small-map{
+    border-radius: 5%;
+}
+.regular-map {
+    display: none;
+}
+
+.map-text {
+    margin: 8% 0 0;
+}
+
+.map-text p, h3 {
+    padding: unset;
+    text-align: center;
+}
+
+/* overwrite p for footer to go back to base style.css*/
+.footer-flex p {
+    padding: 0;
+}
+
+/* Set form */
+
+/*add padding in empty div to add space between h2s and form/map*/
+.grid-item .space {
+    padding: 2%;
+}
+.form-container {
+    width: 65%;
+    margin: auto;
+}
+/*add to inputs 5% of padding-left to separate text from container left-border. All the input text will move to the right getting out of the .form-container, so to compensate and stay centered add a width of 95% instead of 100%. It will look like the item is in 100%*/
+
+input{
+    background-color: #FBFADD;
+    width: 95%;
+    border-radius: 20px;
+    border: none;
+}
+
+input, .text-checkbox {
+    font-family: "neue montreal", Arial, Helvetica, sans-serif;
+    color: #9B9B9B;
+    padding:10px 0 10px 5%;
+    margin: 2% 0;
+}
+
+#email{
+    background-color: #DFE9F5;
+    
+}
+#number{
+    background-color: #E5F1DA;
+    
+}
+#message{
+    background-color: #F6F3FF;
+    padding: 10px 0px 135px 5%;
+}
+
+input[type=checkbox] {
+    color: #707070;
+    width: unset;
+    margin: 0 5px;
+}
+  
+input[type=submit] {
+    font-family: "made sunflower", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 100%;
+    font-size: 23px;
+    color: #707070;
+    background-color: #B9AED5;
+    margin: auto;
+}
+ 
+input[type=submit]:hover {
+    color: #707070;
+    background-color: #CEE4B8;
+}
+
+
+/* ===== Tablet ABOUT ======*/
+@media (min-width:768px){
+    main p, h2 {
+        text-align: left;
+    }
+
+    main div h2 {
+        margin: 0 10% 2%;
+    }
+
+    main div:nth-child(3){
+        margin-top: 7%;
+    }
+
+     /* overwrite p and white logo for footer to go back to base style.css*/
+     .footer-flex p {
+        text-align: left;
+        padding: 0;
+    }
+
+    div.flex-item:nth-child(3) {
+        align-self: center;
+    }
+
+    .grid-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 0 5%;
+    }
+
+    .grid-item:nth-child(2){
+        grid-column: 2;
+    }
+
+    /* form modified for tablet*/
+    .form-container {
+        width: 86%;
+        margin: auto 10%;
+    }
+
+    .grid-content .grid-item {
+        display: unset;
+        padding: 7% 0 0 0;
+        margin: 0 0% 0 9%;
+    }
+
+    .grid-item h2:not(.modifier){
+        padding-left: 11%;
+    }
+
+    .map-text p, .map-text h3{
+        text-align: left;
+    }
+
+     /*change small-map for regular-map by display regular and hide small with display property*/
+     .small-map{
+        display: none;
+    }
+    .regular-map{
+        display: unset;
+        width: 75%;
+        border-radius: 5%;
+    }
+
+}
+
+/* ===== Desktop ABOUT ======*/
+@media (min-width:1000px){
+
+    /*to move main text to the right keeping the background use margin right*/
+    .gradient div {
+        margin-right: 40%;
+    }
+
+    /*change width to keep .grid-content container symmetric*/
+    .regular-map{
+        display: unset;
+        width: 80%;
+    }
+   
+}

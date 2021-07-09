@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style/about-style.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="shortcut icon" type="image/jpg" href="images/home-icon.png"/>
+        <link href="//db.onlinewebfonts.com/c/7980cc1889b6b0b264dc47cca659f7c2?family=Neue+Montreal" rel="stylesheet" type="text/css"/>
+        <link href="//db.onlinewebfonts.com/c/43cb06ffbdca47126d0b5a2eec7e90ae?family=MADE+Sunflower" rel="stylesheet" type="text/css"/>
+        <title>Prototype - Home - Carol Rincon</title>
+    </head>
+    
+    <body>
+        <header>
+            <div class="header-background">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Bubbly & Cream Logo">
+                </div> <!-- end logo -->
+                <div class="nav-container">
+                    <div class="home-icon">
+                        <a href="index.html"><img src="images/home-icon.png" alt="home icon"></a>
+                        <a class="home" href="index.html">Home</a>
+                    </div>
+                    <div class="nav-bar">
+                        <a href="products.html">Products</a>
+                        <a href="about.html">About Us</a>
+                    </div> <!-- nav-bar -->
+                </div><!-- nav-container -->
+            </div><!-- header-background -->
+        </header>
+        
+        <main class="back-img">
+            <!-- put text content into a div to generate another background color in linear-gradient over the img background of the main container so the text is more legible-->
+            <div class="gradient">
+                <div><h2>STORY</h2></div>
+                <div><p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ipsum sed venenatis aliquet. Proin rhoncus nibh eleifend quam mattis, in luctus arcu mattis. Integer ornare, mauris vel rhoncus varius, lorem mauris condimentum lectus, et rutrum mauris arcu id diam. Nam ut lectus accumsan, varius tellus a, venenatis nunc. Duis ac auctor eros.   Nam ut lectus accumsan, varius tellus a, venenatis nunc proin rhoncus nibh.<br><br>
+                    
+                    Phasellus dui arcu, interdum nec arcu ut, eleifend varius quam. Nunc sollicitudin mi quis consectetur dictum. Suspendisse vestibulum malesuada massa non pellentesque. Aliquam purus lorem, mollis in ultrices sit amet, pretium vitae eros. Nulla imperdiet nisl non velit gravida facilisis. Suspendisse eget ex nec augue malesuada volutpat. Mauris facilisis, tortor a volutpat ornare, justo dui placerat lacus, non tristique ex purus in ligula. Praesent tempus mi vel tincidunt molestie.</p>
+                </div>
+                <div><h2>ICE CREAM</h2></div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ipsum sed venenatis aliquet. Proin rhoncus nibh eleifend quam mattis, in luctus arcu mattis. Integer ornare, mauris vel rhoncus varius, lorem mauris condimentum lectus, et rutrum mauris arcu id diam. Nam ut lectus accumsan, varius tellus a, venenatis nunc. Duis ac auctor eros.   Nam ut lectus accumsan, varius tellus a, venenatis nunc proin rhoncus nibh.</p>
+                </div>
+            </div><!-- end gradient -->
+        </main>
+
+        <div class="grid-content">
+            <div class="grid-item">
+                <h2>CONTACT</h2>
+                <!-- add empty div to add margin between h2 and form -->
+                <div class="space"></div>
+
+                <div class="form-container">
+                    <input type="text" id="fname" name="fname" value="Name"><br>
+                    <input type="text" id="email" name="email" value="Email Address"><br>
+                    <input type="text" id="number" name="number" value="Phone Number"><br>
+                    <input type="text" id="message" name="message" value="Message"><br>
+                    
+                    <div class="text-checkbox">
+                        <input type="checkbox" id="terms" name="terms" value="Agree Terms">
+                        <label for="terms">I agree to terms</label><br>
+                    </div>
+                    <input class="button" type="submit" value="Contact">
+                                    
+                </div><!-- end form-container -->
+            </div> <!-- end grid-item -->
+
+            <!-- embed 2 sizes of map to display small-map in mobil and regular-map in desktop, display none in css to hide respectively -->
+            <div class="grid-item">
+                <h2 class="modifier">VISIT US</h2>
+                <!-- add empty div to add margin between h2 and form -->
+                <div class="space"></div>
+                <div class="map">
+                    <iframe class="small-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2554.4593316525907!2d-75.76073264702208!3d45.34881013424269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04540b77e3bb%3A0x9e246d934b6c6ed!2sAlgonquin%20College%20of%20Applied%20Arts%20and%20Technology!5e0!3m2!1ses-419!2sca!4v1625757334257!5m2!1ses-419!2sca" width="260" height="329" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    
+                    <iframe class="regular-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2554.4593316525907!2d-75.76073264702208!3d45.34881013424269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04540b77e3bb%3A0x9e246d934b6c6ed!2sAlgonquin%20College%20of%20Applied%20Arts%20and%20Technology!5e0!3m2!1ses-419!2sca!4v1625757334257!5m2!1ses-419!2sca" width="524" height="279" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div><!-- end map-container -->
+                <div class="map-text"><h3>Our shop!</h3>
+                <p>1385 Woodroff Ave, Nepean, ON.<br>K2G 1V8</p></div>
+            </div>
+        </div><!-- end grid-content -->
+
+        <footer>
+            <div id="footer" class="footer-flex">
+                <div class="flex-item">
+                    <p><strong>Contact</strong><br>+ 1 343-098-7445<br>info@bubblyandcream.ca<br><br><strong>Hours</strong><br>Mon - Fri: 10am - 5pm<br>Weekends: 9am - 7pm<br><br>©Bubbly&cream2021</p>
+                </div>
+            <!-- to move social media icons together, put all in a div as a container-->
+                <div class="flex-item">
+                    <img src="images/facebook.png" alt="facebook icon" width="44">
+                    <img src="images/instagram.png" alt="Instagram icon" width="44">
+                    <img src="images/twitter.png" alt="twitter icon" width="44">
+                </div>
+
+                <div class="flex-item">
+                    <img src="images/white-logo.png" alt="white logo" width="161">
+                </div>
+            </div> <!-- end footer flex -->
+        </footer>
+    </body>
+</html>

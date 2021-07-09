@@ -1,0 +1,175 @@
+/* General style for header, footer and text */
+h1, h2, h3 {
+    font-family: "made sunflower", Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: #707070;
+}
+
+p {
+    font-family: "neue montreal", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #707070;
+    font-weight: 300;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #B9AED5;
+    border-radius: 20px;
+    padding: 2%;
+    margin: 5% 10%;
+    font-family: "made sunflower", Arial, Helvetica, sans-serif;
+}
+
+.button:hover{
+    color: #707070;
+    background-color: #CEE4B8;
+}
+
+/* ===== Mobile header & Footer======*/
+
+/*As background-image take multiple values, adding a linear gradient with the same white low opacity color plus overlay blend mode will made the visual effect of low opacity in the background img*/
+.header-background {
+    background-image: url("..//images/ice-cream-header-background.jpeg"),linear-gradient(#ffffff9a,rgba(255, 255, 255, 0.5));
+    background-blend-mode: overlay;
+    height: 375px;
+    background-size: cover;
+    background-position: center center;
+}
+
+div.nav-bar a, div.home-icon img, a.home{
+    text-decoration: none;
+    color: #707070;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+
+ div.home-icon {
+    background-color: #ffffff9a;
+}
+
+.logo, .nav-bar {
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+}
+.home-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.home {
+    align-self: center;
+}
+
+/*move up a little the image with -40px*/
+.logo img {
+    width: 302px;
+    object-position: 0px -40px;
+}
+
+/*put smaller div so the nav bar items go up automatically*/
+div .logo {
+    height: 210px;
+}
+
+.home-icon img {
+    width: 49px;
+}
+/* = Start of Mobile Footer =*/
+.footer-flex {
+    display: flex;
+    flex-direction: column-reverse;
+	align-items: center;
+    text-align: center;
+    padding: 25px 0 25px;
+    background-color: #f6f3ff;
+}
+/* Generates space evenly in the items*/
+.flex-item {
+    padding: 8px 0px 8px;
+}
+
+
+/* ===== Tablet header & Footer ======*/
+@media (min-width:768px){
+    .header-background {
+        height: 363px;
+    }
+    
+    .logo img {
+        width: 357px;
+        object-position: 0px -40px;
+    }
+
+/*adjust div height so the nav bar items go up automatically*/
+    div .logo {
+        height: 280px;
+    }
+
+/*negative margin to put on top of .nav-container background container*/
+    .home-icon img {
+        width: 107px;
+        margin: -25px 0 0;
+    }
+
+    div.home-icon {
+        background-color: unset;
+        padding-left: 5%;
+    }
+
+    .nav-container {
+        background-color: #ffffff9a;
+        display: flex;
+        margin: 28px 0px 0px;
+        height: 55px;
+    }
+
+    div.nav-bar a:hover, a.home:hover {
+        background-color: #A4BFE2;
+        padding: 2px 30px;
+        color: #ffffff;
+    }
+/*35% of the div space which is along the screen after the home-icon div filled space, space evenly to create gap between nav-bar options*/    
+    .nav-bar {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 35%;
+    }
+
+/* = Start of Tablet Footer =*/
+
+    /* 5% padding at left and right side to match with header margin (left side)*/
+    .footer-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: unset;
+        text-align: left;
+        padding: 25px 5%;
+        background-color: #f6f3ff;
+        justify-content: space-between;
+    }
+
+    /* Generates space evenly in the items*/
+    .flex-item {
+        padding: 8px 0px 8px;
+    }
+
+    div.flex-item:nth-child(2) {
+        align-self: center;
+    }
+
+
+}
+
+/* ====== Desktop header =====*/
+@media (min-width:1000px){
+    .nav-bar {
+        width: 25%;
+    }
+}

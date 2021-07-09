@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style/home-style.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="shortcut icon" type="image/jpg" href="images/home-icon.png"/>
+        <link href="//db.onlinewebfonts.com/c/7980cc1889b6b0b264dc47cca659f7c2?family=Neue+Montreal" rel="stylesheet" type="text/css"/>
+        <link href="//db.onlinewebfonts.com/c/43cb06ffbdca47126d0b5a2eec7e90ae?family=MADE+Sunflower" rel="stylesheet" type="text/css"/>
+        <title>Prototype - Home - Carol Rincon</title>
+    </head>
+    
+    <body>
+        <!-- Use grid-wrapper to create grid areas in 1000px screen-->
+        <div class="grid-wrapper">
+            <header>
+                <div class="header-background">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="Bubbly & Cream Logo">
+                    </div> <!-- end logo -->
+                    <div class="nav-container">
+                        <div class="home-icon">
+                            <a href="index.html"><img src="images/home-icon.png" alt="home icon"></a>
+                            <a class="home" href="index.html">Home</a>
+                        </div>
+                        <div class="nav-bar">
+                            <a href="products.html">Products</a>
+                            <a href="about.html">About Us</a>
+                        </div> <!-- nav-bar -->
+                    </div><!-- nav-container -->
+                </div><!-- header-background -->
+            </header>
+
+            <main>
+                <div class="content">
+                    <!-- Atribute controls and type are needed to tell the browser what kind of file is it and for play/pause interaction, without 'controls' it will look like an static picture-->
+                    <div><video controls> <source src="video/mom-kid-video.mp4" type=video/mp4>
+                    </video></div>
+                    <div class="grid-item">
+                        <div><h1>BUBBLY & CREAM</h1></div>
+                        <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate ipsum sed venenatis aliquet. Proin rhoncus nibh eleifend quam mattis, in luctus arcu mattis. Integer ornare, mauris vel rhoncus varius, lorem mauris condimentum lectus, et rutrum mauris arcu id diam. Nam ut lectus accumsan, varius tellus a, venenatis nunc. Duis ac auctor eros.   Nam ut lectus accumsan, varius tellus a, venenatis nunc proin rhoncus nibh.</p></div>
+                        <div><a href="about.html" class="button">See More</a></div>
+                    </div> <!-- end grid-item-->
+                </div> <!-- end content-->
+            </main>
+
+            <!-- Put img outside main to target individually and be able to assign a grid area, use srcset to create responsive images where the browser can choose which one to use from the given options at each breakout point -->
+            <div class="content2">
+                <div><h2>MOOD FLAVOURS</h2></div>
+                <div class="cover-products">
+                    <!-- create class per img to specify values in clip-path: ellipse individually -->
+                    <img class="path1"
+                        srcset="images/strawberry-ice-cream-320.jpg 320w,
+                                images/strawberry-ice-cream-480.jpg 480w, 
+                                images/strawberry-ice-cream-720.jpg 720w,
+                                images/strawberry-ice-cream-960.jpg 960w"
+                        sizes="(min-width: 960px) 50vw, 100vw"
+                        src="images/strawberry-ice-cream-960.jpg"
+                        alt="Strawberry Ice Cream Flavour">
+
+                    <img class="path2"
+                        srcset="images/mood-flavours-cover-320.jpg 320w,
+                                images/mood-flavours-cover-480.jpg 480w, 
+                                images/mood-flavours-cover-720.jpg 720w,
+                                images/mood-flavours-cover-960.jpg 960w"
+                        sizes="(min-width: 960px) 50vw, 100vw"
+                        src="images/mood-flavours-cover-960.jpg"
+                        alt="Mood Flavours Ice Cream">
+                    
+                    <img class="path3"
+                        srcset="images/passion-fruit-ice-cream-dessert-320.jpg 320w,
+                                images/passion-fruit-ice-cream-dessert-480.jpg 480w, 
+                                images/passion-fruit-ice-cream-dessert-720.jpg 720w,
+                                images/passion-fruit-ice-cream-dessert-960.jpg 960w"
+                        sizes="(min-width: 960px) 50vw, 100vw"
+                        src="images/passion-fruit-ice-cream-dessert-960.jpg"
+                        alt="Mood Flavours Ice Cream">
+                </div><!-- end cover-products --> 
+                
+                    <div><p>Maecenas in velit lacus. Curabitur mattis, tortor quis venenatis tempus, eros arcu viverra felis, eget varius sem nisi nec massa. Sed eget lacus porta, viverra lacus porta, pretium metus. Nulla vitae dapibus sem. Nam vitae nibh non ligula pellentesque venenatis et quis leo. Sed in lobortis ex. Curabitur viverra dolor non sapien cursus, id pharetra arcu iaculis. Praesent pulvinar fringilla odio sed aliquam. Maecenas porttitor massa vitae velit tempor condimentum.</p></div>
+                    <div><a href="products.html" class="button">Explore</a></div>
+            </div><!-- end content2 -->
+        </div><!-- end grid-wrapper-->
+
+        <!-- Put footer outside grid-wrapper to not modify initial width at a porcentage, so the footer backroung is responsive-->
+        <footer>
+            <div id="footer" class="footer-flex">
+                <div class="flex-item">
+                    <p><strong>Contact</strong><br>+ 1 343-098-7445<br>info@bubblyandcream.ca<br><br><strong>Hours</strong><br>Mon - Fri: 10am - 5pm<br>Weekends: 9am - 7pm<br><br>©Bubbly&cream2021</p>
+                </div>
+            <!-- to move social media icons together, put all in a div as a container-->
+                <div class="flex-item">
+                    <img src="images/facebook.png" alt="facebook icon" width="44">
+                    <img src="images/instagram.png" alt="Instagram icon" width="44">
+                    <img src="images/twitter.png" alt="twitter icon" width="44">
+                </div>
+
+                <div class="flex-item">
+                    <img src="images/white-logo.png" alt="white logo" width="161">
+                </div>
+            </div> <!-- end footer flex -->
+        </footer>
+    </body>
+</html>

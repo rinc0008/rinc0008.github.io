@@ -28,6 +28,33 @@ p {
     color: #707070;
     background-color: #CEE4B8;
 }
+/*add animation to tumble button in hover*/
+.button:hover{
+    animation-name: buttonanimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+
+@keyframes buttonanimation{
+    0%{
+        transform: scale(0.9) rotate(0deg);
+    }
+
+    35% {
+        transform: scale(1) rotate(1deg);
+    }
+
+    75%{
+        transform: scale(1) rotate(-1deg);
+    }
+
+    100%{
+        transform: scale(0.9) rotate(0deg);
+    }
+}
 
 /* ===== Mobile header & Footer======*/
 
@@ -81,6 +108,70 @@ div .logo {
 .home-icon img {
     width: 49px;
 }
+
+/*Header animation: logo appears and increase size, background image appears, and navigation bar slide up and appears*/
+.logo img {
+    animation-name: logoanimation;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+@keyframes logoanimation{
+    from{
+        transform: scale(0.6);
+        opacity: 0;
+    }
+
+    to{
+        transform: scale(1);
+        opacity: 100;
+    }
+
+}
+
+.nav-container {
+    animation-name: navanimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+
+@keyframes navanimation{
+    from{
+        transform: translate(0, 100%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translate(0, 0);
+        opacity: 100;
+    }
+}
+
+.header-background {
+    animation-name: headeranimation;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+
+@keyframes headeranimation{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 100;
+    }
+}
+
+
 /* = Start of Mobile Footer =*/
 .footer-flex {
     display: flex;

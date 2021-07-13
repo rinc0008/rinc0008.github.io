@@ -1,0 +1,83 @@
+STOCK USED IN BUBBLE&CREAM PROTOTYPE WEBSITE\
+
+HEADER:
+
+Ice-cream-header-background:
+    https://pixabay.com/photos/ice-cream-cones-fruits-5928043/
+
+
+
+HOME PAGE:
+
+Ice-cream-background-2:
+    https://www.pexels.com/photo/close-up-photo-of-person-holding-assorted-flavor-ice-cream-on-cone-1352245/
+
+Mood-flavors-cover:
+    https://www.pexels.com/photo/dessert-ice-cream-summer-sweet-3631/
+
+
+Strawberry-ice-cream:
+    https://www.pexels.com/photo/strawberry-ice-cream-2161649/
+
+
+Passion-fruit-ice-cream-dessert:
+    https://www.pexels.com/photo/close-up-photography-of-cooked-food-on-black-ceramic-plate-1893567/
+
+Mom-kid-and-ice-cream:
+    https://www.pexels.com/video/woman-feeding-her-kid-an-ice-cream-5480395/
+
+Mom-kid-video:
+    https://www.pexels.com/video/playing-home-room-icecream-5480390/
+
+
+
+ICONS:
+
+Social media icons:
+    https://www.flaticon.com/packs/social-media-24?word=social%20media
+
+Chat icon:
+    https://fontawesome.com/v5.15/icons/comments?style=solid
+
+
+
+PRODUCTS PAGE:
+
+Kid-and-ice-cream:
+    https://unsplash.com/photos/Nl7MKI6SBqM
+
+Mood-flavors-cover:
+    https://www.pexels.com/photo/dessert-ice-cream-summer-sweet-3631/
+
+Strawberry-ice-cream:
+    https://www.pexels.com/photo/strawberry-ice-cream-2161649/
+
+Ice-cream-cones:
+    https://pixabay.com/photos/ice-cream-waffles-food-2202561/
+
+Quietness-ice-cream:
+    https://unsplash.com/photos/XlBkpiB2nRw
+
+Adventure-ice-cream:
+    https://unsplash.com/photos/8beTH4VkhLI
+
+Madness-ice-cream:
+    https://unsplash.com/photos/Mtw3RHcIKfA
+
+
+
+ABOUT US PAGE:
+
+Adventure-ice-cream:
+    https://unsplash.com/photos/8beTH4VkhLI
+
+
+
+FONTS:
+Made Sunflower:
+    Original from: https://www.dafont.com/made-sunflower.font
+    Linked form: https://www.onlinewebfonts.com/download/43cb06ffbdca47126d0b5a2eec7e90ae
+
+Neue Montreal:
+    Original from: https://www.dafontfree.co/neue-montreal-font-family-free/
+    Linked from: https://www.onlinewebfonts.com/download/7980cc1889b6b0b264dc47cca659f7c2

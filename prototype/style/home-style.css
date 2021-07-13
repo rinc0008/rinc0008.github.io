@@ -42,10 +42,11 @@ h1, p {
 
 .cover-products .path1 {
     clip-path: ellipse(30% 45% at 50% 50%);
+    margin: 5% 0 0% 10%;
 }
 
 .cover-products .path3 {
-    clip-path: ellipse(45% 35% at 50% 50%); ;
+    clip-path: ellipse(45% 35% at 50% 50%);
 }
 
 .cover-products {
@@ -53,22 +54,9 @@ h1, p {
     grid-template-columns: repeat(2, 1fr);
 }
 
-/*add padding to change image position in the circle*/
-.cover-products img:nth-child(1) {
-    height: 100%;
-    margin: 4%;
-    padding-right: 10%;
-}
-
-/*add margin to put img centered and at the same high than the next img*/
-.cover-products img:nth-child(2) {
-    height: 100%;
-    margin: 4% -10%;
-}
-
-/*modify img circunference to match heigh:100*/
 .cover-products .path2 {
-    clip-path: ellipse(33% 45% at 50% 50%);
+    clip-path: ellipse(30% 45% at 50% 50%);
+    margin: 5% 0% 0% -10%;
 }
 
 /*negative margin to get closer to the other images in the top part, the original img is a rectangle and its heigh count as part of the hidden content diplayed in the grid space */

@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Bootstrap This! - Carol Rincon - Elements</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="elements.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Elements
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#components">Components</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#utilities">Utilities</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#grid">Grid</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <!-- bg-light adds bacground color and bg-gradient adds linear gradient from semi transparent white to trasnparent--> 
+        <header class="main-header bg-light bg-gradient text-dark">
+        <!-- Py-5 is the padding in the top and button for the container -->  
+      <div class="py-5">
+        <!-- container generates padding for the content at left and right sides--> 
+        <div class="container" >
+            <div class="text-center justify-content-center align-self-center">
+              <h1>
+                Bootstrap?
+              </h1>
+              <p>Use Bootstrap to create and style awesome responsive websites, start with mobile fisrt! And guess what? It’s for free. Think about Bootstrap as a framework, template and/or CSS library! Where you can find tons of elements to build your website only writing HTML5 doctype code, obviously you could add some external CSS to customise even more, but let’s start with the basics!</p>
+              <a href="index.html#about" class="btn btn-dark">
+                Let's Start
+              </a>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Components -->
+    <section id="components" class="p-5">
+      <div class="container">
+        <div class="row">
+            <h2 class="text-center">Components</h2>
+
+            <div class="py-3 col-md-6">
+                <!--Start Carousel-->
+                <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img  src="images/carousel-1.jpeg" class="d-block w-100" alt="Computer screen with motivational message">
+                      </div>
+                      <div class="carousel-item">
+                        <img  src="images/carousel-2.jpeg" class="d-block w-100" alt="Woman reading book">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+            <!-- put paragraph and img in a grid of two columns, add inline-height with h-50 and d-inline-block classes -->
+            <div class="py-3 col-md-6">
+              <p class="h-30 d-inline-block" >
+                Components are there to make the interface more dynamic, and to provide tools and user interactions with the content. Bootstrap has a wide list of components pre coded and easy to write and link in your own HTML5, because is an open source for everybody even if you don’t have knowledge in JS! With Bootstrap’s Components you can make interesting pictures animations and objects actions like Buttons states, responsive Nav-bars, Carousels, Collapse, Badge, Spinners,  Tooltips, and Cards among the most popular!
+              </p>
+              <p>
+                But remember that many of the components require jQery, Popper.js and the own Bootstrap Javascript plugins. The 'script' to activate these elements goes right before the closing ‘/body’ of the HTML file. Go ahead and copy and paste this code! it also can be found in getboostrap.com>Introduction and there under JS.
+              </p>
+              
+              
+              <div class="spinner-border text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-dark" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              
+              <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand">Navbar</a>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+              <!--add empty div to add space between items at the top and botton-->
+              <div class="h-30 d-inline-block"></div>
+              <!--add visual example of the mix of a component 'badge' and a text utility such as text-wrap-->
+              <h2><span class="badge bg-secondary text-wrap" style="width: 16rem;">This is the component 'Badge'and it's wrapped by a text utility. </span></h2>
+
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Utilities -->
+    <section id="utilities" class="p-5">
+        <div class="container shadow p-3 mb-5 bg-body rounded">
+          <div class="row">
+              <h2 class="text-center">Utilities</h2>
+  
+              <div class="py-3 col-md-3 ">
+              <img src="images/computer-image.jpeg" class="img-fluid mb-3 img-thumbnail position-relative" alt="computer screen with coding software opened">
+               <!-- Example of the visibility utility! the second image does not appears in the browser but the element will stay invisible there-->
+              <img src="images/computer-image.jpeg" class="img-fluid mb-3 img-thumbnail position-relative invisible" alt="computer screen with coding software opened">
+              </div>
+            
+  
+              <!-- put paragraph and img in a grid of two columns, add inline-height with h-50 and d-inline-block classes -->
+              <div class="py-3 col-md-5">
+                <p class="h-30 d-inline-block" >
+                    Change the elements visually, modify the appearance, borders, add shadows, change the text colors, and background colors, re sizing elements, and text, and rositioning elements and much more! With utilities the objects can turn invisible! Yes! As the picture hidden below the displayed one.
+                </p>
+                <p>
+                    Utilities also work with overflows, it can be to hide them, make a scrolling box, juts let it out the container or wrap the text! To use the benefits of Bootstrap is a matter of be careful with the classes and pay attention to the rules, because those were all created to make the website design more efficient and easier. Adding more complex code languages as is JS and use its features without really knowledge about it! it’s a huge help.
+                </p>
+              </div>
+              <div class="py-3 col-md-4">
+                <h4 class="text-wrap" style="width: 18rem;"> Use the following classes to change the font weight and color: </h4>
+                <p class="fw-bold text-primary">Ufw-bold - text-primary</p>
+                <p class="fw-normal text-warning">fw-normal - text-warning</p>
+                <p class="fw-light text-danger">fw-light - text-danger</p>
+                <p class="fw-lighter text-success">fw-lighter (relative to the parent) - text-success</p>
+                <p class="fst-italic text-dark">fst-italic - text-dark</p>
+                <p class="fst-normal text-secondary">fst-normal - text-secondary</p>
+              </div>
+          </div>
+        </div>
+    </section>
+
+      <!-- Grid -->
+    <section id="grid" class="p-5">
+        <div class="container">
+          <div class="row">
+              <h2 class="text-center">Grid</h2>
+  
+              <!-- put paragraph and img in a grid of two columns, add inline-height with h-50 and d-inline-block classes -->
+              <div class="py-3 col-md-6">
+                <p class="h-30 d-inline-block" >
+                    Bootstrap have a predeterminate grid system of 12 columns made with flexbox! To organize the content in the grid we must first have the content wrapped in a 'div' with the class ‘container’ this will allows us to select which part of the content we want to reorganize in the grid. It will be responsive automatically, because the system will identify which screen size are you using for designing the grid! How so? When giving the command to organize the element in the columns with the class ‘.col-lg-*’ (*= the column number, if it is 5 it will take 5 columns of 12) Bootstrap will identify that is for long screens (≥992px). 
+                </p>
+
+                <div class=" bg-light">
+                <p class="h-30 d-inline-block" >
+                    If designing for mobile, below 576px the class will be ‘.col-xs-*’, for tablets (≥576px) ‘.col-sm-*’, for medium screens (≥768px) ‘.col-md-*’, for more longer screens (≥1200px) ‘.col-xl-*.
+                </p>
+                </div>
+
+                <p>
+                    When we’re referring to the system grid the standard of 12 columns would work better for the desktop, tablet will use 8 and mobile will use 6 columns. Nevertheless, it can be changed and/or reversed! If in the div container it is specified, the number of columns for each screen size. For example, if using in the container ‘div class="col-xs-12 col-sm-6 col-md-8”’ it will set the mobile screen to have 12 columns, the tablet 6 columns and the desktop 8 columns.
+                </p>
+              </div>
+
+               <div class="py-3 col-md-6 accordion">
+                   <!--card-header will have the 100% width into the container and will be under a light backround, to not have the button above the background turn button to light-->
+                    <p class="card-header">
+                        <a class="btn btn-light" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Example 1
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row col-xs-12">
+                                    <img src="images/example-grid.png" class="img-fluid mb-3 img-thumbnail align-middle" alt="example grid 1">
+                                </div>
+                                <div class="row col-xs-collapse">
+                                    <div class="col-md-1 well bg-primary"> 1 </div>
+                                    <div class="col-md-2 well bg-secondary"> 2 </div>
+                                    <div class="col-md-3 well bg-success"> 3 </div>
+                                    <div class="col-md-4 well bg-warning"> 4 </div>
+                                    <div class="col-md-2 well bg-light"> 2 left </div>
+                                </div>
+                                <div class="h-30 d-inline-block"></div>
+                                <p>The examples are made directly with the bootstrap grid which means it will resize automatically, it will snap the items respectevely, in mobile and smaller screen sizes will be only one column and for longer screens (desktop) it will be showing with the 12 columns grid as the example. Below is a screenshot of how it looks like in medium to long screens.</p>
+                                <div class="row col-xs-12">
+                                    <img src="images/screen-example-grid.png" class="img-fluid mb-3 img-thumbnail align-middle" alt="example grid 1">
+                                </div>
+                            </div> <!--End container for example 1-->
+                        </div>
+                    </div><!--End example1-->
+                    <p class="card-header">
+                        <a class="btn btn-light" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                        Example 2
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <img src="images/example-grid-2.png" class="img-fluid mb-3 img-thumbnail align-middle" alt="example grid 2">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 border bg-primary"> 4 </div>
+                                    <div class="col-md-2 border bg-secondary"> 2 </div>
+                                    <div class="col-md-2 border bg-success"> 2 </div>
+                                    <div class="col-md-1 border bg-warning"> 1 </div>
+                                    <div class="col-md-3 border bg-info"> 3 </div>
+                                </div>
+                                <!--To add more space in between the grids add an empty div-->
+                                <div class="h-30 d-inline-block"></div>
+                                <div class="row">
+                                    <div class="col-md-5 border border-primary"> 5 </div>
+                                    <div class="col-md-3 border border-secondary"> 3 </div>
+                                    <div class="col-md-7 border border-success"> 7 </div>
+                                </div>
+                                <div class="h-30 d-inline-block"></div>
+                                <p>The last div item goes down witouth write the class 'row' because in this case, 7 columns  does not fit in the 4 columns that have the 12 columns grid left.</p>
+                                <div class="h-30 d-inline-block"></div>
+                                <p> Below is a screenshot of how it looks like in medium to long screens.</p>
+                                <div class="row col-xs-12">
+                                    <img src="images/screen-example-grid-2.png" class="img-fluid mb-3 img-thumbnail align-middle" alt="example grid 2">
+                                </div>
+                            </div> <!--End container for example 2-->
+                        </div>
+                    </div><!--End example2-->
+                </div><!--End accordion group-->
+            </div> <!--End row for grid section-->
+        </div>
+    </section>
+  
+
+    <!-- Footer -->
+    <footer class="navbar-dark bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="p-5">
+            <p class="text-center">&copy; Copyright 2021 - Bootstrap This - Responsive web design II - Carol Rincon</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Script option 1 to activate popper, jquery (JS for make work many components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

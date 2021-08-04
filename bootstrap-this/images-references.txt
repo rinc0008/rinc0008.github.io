@@ -1,0 +1,12 @@
+Images References:
+
+The example-grid images are screenshots of the code by me.
+
+Computer-image.jpeg
+https://unsplash.com/photos/m_HRfLhgABo
+
+Carousel-1.jpeg
+https://unsplash.com/photos/bs2Ba7t69mM
+
+Carousel-2.jpeg
+https://unsplash.com/photos/e6XkZfEt_mc

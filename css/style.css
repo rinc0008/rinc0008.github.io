@@ -1,0 +1,356 @@
+h1, h2, h4, h5, a, .button {
+  font-family: 'Annie Use Your Telescope', cursive, sans-serif;
+  color: #707070;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: #707070;
+}
+
+footer p {
+  color: white;
+}
+
+div.nav-bar {
+  background-image: linear-gradient(#BBE8E3, #B069EF);
+}
+
+.nav-bar a {
+  text-align: center;
+  float: none;
+}
+
+/* Sidebar links */
+.nav-bar a {
+  color: whitesmoke;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Links on mouse-over */
+.nav-bar a:hover:not(.logo) {
+  background-color: #555;
+  color: white;
+}
+
+.nav-bar .hidet{
+  display: none;
+}
+
+.gif-home-cover {
+  height: 304px;
+  background-image: url(..//images/video-cover.gif);
+  background-size: cover;
+  background-position: center center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button.btn.explore {
+  background-color: #BBE8E3;
+  border-radius: 12px;
+  color: #707070;
+}
+.button.btn.explore:hover {
+  background-color: #89D6CC;
+  color: #3a3a3a;
+}
+
+.button.btn {
+  background-color: #B069EF;
+  border-radius: 12px;
+}
+
+.button.btn:hover {
+  background-color: #8E25EB;
+  border-radius: 12px;
+}
+
+.grid-item:nth-child(1){
+  margin: 5%;
+}
+
+footer {
+  background-color: #B069EF;
+  font-size: 14px;
+}
+
+footer h4 {
+  color: white;
+}
+
+.copy {
+  font-size: 0.7rem;
+}
+
+.portrait {
+  background-image: url(..//images/illustration-portrait.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.ronora {
+  background-image: url(..//images/illustration-ronora.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+input::placeholder, .form-check {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 0.7rem;
+}
+
+.form-background {
+  background-color: #C9C9C9;
+  border-radius: 12px;
+}
+
+.form-control {
+  border-radius: 12px;
+}
+
+#inputmessage {
+  padding:1rem 0rem 6rem 0.7rem;
+}
+
+.puppy, .boostideas, .nutri, .reel {
+  height: 300px;
+}
+
+h1.invisible {
+  display: none;
+}
+
+/*add gifs for the video page, set height in 300px for mobile and put in on auto in tablet and desktop so the videos can adjust depend on the text container next to them. It allows them to be responsive*/
+.puppy {
+  background-image: url(..//images/paper-puppy.gif);
+  background-size: cover;
+  background-position: center center;
+}
+
+.boostideas {
+  background-image: url(..//images/boostideas.gif);
+  background-size: cover;
+  background-position: center center;
+}
+
+.nutri {
+  background-image: url(..//images/nutri-nati.gif);
+  background-size: cover;
+  background-position: center center;
+}
+
+.reel {
+  background-image: url(..//images/reel-2020-carol.gif);
+  background-size: cover;
+  background-position: center center;
+}
+
+.grid-element:nth-child(2){
+  background-color: #B069EF;
+}
+
+.grid-element:nth-child(4){
+  background-color: #BBE8E3;
+}
+
+.grid-element:nth-child(2){
+  padding: 1.9rem;
+}
+
+.grid-element:nth-child(4){
+  padding: 1.9rem;
+}
+
+.grid-element:nth-child(2){
+  margin-top: 1rem;
+}
+
+.grid-element:nth-child(3),
+.grid-element:nth-child(5){
+  margin-bottom: 1rem;
+}
+
+.grid-element:nth-child(7){
+  grid-area: text3;
+  margin: 1.5rem 2rem 1.5rem 2rem;
+}
+
+
+  /* Tablet - turn sidebar into a topbar using flex */
+  @media screen and (min-width: 768px) {
+    .nav-bar {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+    }
+
+    h1, h2, h4, p {
+      text-align: left;
+    }
+
+    .align-button {
+      display: flex;
+      justify-content: left;
+    }
+
+    .grid-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .grid-item:nth-child(2),
+    .grid-item:nth-child(3){
+      grid-column: 1;
+    }
+
+    .grid-item:nth-child(3){
+      grid-row: 2;
+    }
+
+    .grid-item:nth-child(1){
+      grid-column: 2;
+      grid-row: 1/3;
+      padding-left: 5%;
+    }
+
+    footer div.flex-footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center
+    }
+
+    footer h4{
+      display: none;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    img.hide-element {
+      display: none;
+    }
+    /*grid for video page*/
+
+    .grid-content2 {
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      grid-template-areas:
+        "boost boost boost text text"
+        "text2 text2 motion motion motion"
+        "animation animation animation text3 text3"
+        "reel reel reel text3 text3";
+    }
+
+    .grid-element:nth-child(3),
+    .grid-element:nth-child(5){
+      height: auto;
+    }
+  
+    .grid-element:nth-child(6){
+      grid-area: reel;
+      height: auto;
+    }
+
+    .grid-element:first-child{
+      grid-area: animation;
+      height: auto;
+      margin-top: 1rem;
+    }
+
+    .grid-element:nth-child(2){
+      grid-area: text;
+    }
+
+    .grid-element:nth-child(3){
+      grid-area: boost;
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+
+    .grid-element:nth-child(4){
+      grid-area: text2;
+    }
+
+    .grid-element:nth-child(5){
+      grid-area: motion;
+      margin-bottom: 0;
+    }
+
+    .grid-element:nth-child(7){
+      grid-area: text3;
+      margin: 2rem 0.5rem 1.5rem 1rem;
+    }
+
+
+  
+    
+
+
+
+  }
+
+
+/* Desktop, display the bar vertically, instead of horizontally */
+@media screen and (min-width: 992px) {
+
+    /* The side navigation menu */
+  .nav-bar {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    width: 220px;
+  }
+
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 220px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+  .nav-bar .hidet{
+    display: block;
+  }
+
+  .grid-item:nth-child(1){
+    padding-left: 0%;
+  }
+
+
+  .grid-content2 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+      "animation boost text"
+      "animation text2 motion"
+      "reel reel text3";
+  }
+
+  .grid-element:first-child{
+    grid-area: animation;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .grid-element:nth-child(2){
+    grid-area: text;
+    margin-top: 1rem;
+  }
+
+  .grid-element:nth-child(4){
+    margin-left: 1rem;
+  }
+  
+}
+

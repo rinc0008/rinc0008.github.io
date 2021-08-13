@@ -68,6 +68,7 @@ img {
 .button.btn:hover {
   background-color: #8E25EB;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .grid-item:nth-child(1){
@@ -100,7 +101,7 @@ footer h4 {
 }
 
 input::placeholder, .form-check {
-  font-family: 'Raleway', sans-serif !important;
+  font-family: 'Raleway', sans-serif;
   font-size: 0.7rem;
 }
 
@@ -178,6 +179,14 @@ h1.invisible {
 .grid-element:nth-child(7){
   grid-area: text3;
   margin: 1.5rem 2rem 1.5rem 2rem;
+}
+
+/*Hide a link text with the same background color than the gif, with the width 100 and height 100 classes by bootstrap the <a> tag have the same size than the container does. So every where you click on the gif it will take the user to the complete video in vimeo*/
+.reel-link {
+  color: #FEF9D7;
+}
+.reel-link:visited {
+  color: #FEF9D7;
 }
 
 
